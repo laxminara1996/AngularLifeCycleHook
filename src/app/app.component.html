@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>{{title}}</h1>
+  <hr/>
+  <button (click)="someChange()">change</button>
+<hr/>
+<input type="text" name="msg" [(ngModel)]="msg" placeholder="enter some data"/>
+</div>
+<div class="row">
+  <div class="col-mid-12">
+    <app-child [msg]="msg"></app-child>
+  </div>
+</div>
+<div class="container">
+  <div class="col-mid-12">
+    <h2>From the app component</h2>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-mid-12">
+    <app-child></app-child>
+  </div>
+</div>
+
+
